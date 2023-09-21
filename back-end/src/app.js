@@ -20,6 +20,6 @@ app.use("/tables", tablesRouter);
 
 app.use(notFound);
 app.use(errorHandler);
-app.use('/', express.static('../../front-end/build'));
+app.use('/', express.static('../../front-end/build/index.html'));
 
 module.exports = app;
