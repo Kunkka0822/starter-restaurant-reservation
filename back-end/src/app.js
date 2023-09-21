@@ -14,6 +14,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use(express.static('../../front-end/build'));
 
 app.use("/reservations", reservationsRouter);
 app.use("/tables", tablesRouter);
